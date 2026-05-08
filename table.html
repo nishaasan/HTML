@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table with Rowspan and Colspan</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 30px auto;
+      font-family: Arial, sans-serif;
+      background-color: #4CAF50;
+    }
+
+    th, td {
+      border: 2px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    td {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h3 style="font-size: large;">Tables</h3>
+
+<table style="background-color: rgb(215, 215, 18);">
+  <tr>
+    <th rowspan="2">Day</th>
+    <th colspan="2">Session</th>
+  </tr>
+  <tr>
+    <th>Morning</th>
+    <th>Evening</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Math</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td colspan="2">Science Workshop</td>
+  </tr>
+</table>
+
+</body>
+</html>
