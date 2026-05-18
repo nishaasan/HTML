@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Media Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #444;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 40px;
+      }
+
+      .media-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      audio,
+      video {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+
+      audio::-webkit-media-controls-panel,
+      video::-webkit-media-controls-panel {
+        background-color: #ea1313;
+        color: white;
+        border-radius: 0 0 8px;
+      }
+
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Style for the caption text */
+      .caption {
+        font-size: 1rem;
+        text-align: center;
+        color: #777;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Media Elements</h1>
+
+    <div class="media-container">
+      <!-- Audio Example -->
+      <h2>Audio Player</h2>
+      <audio controls>
+        <source src="audio1.mp3" type="audio/mp3" />
+
+      </audio>
+      <div class="caption">Listen to our latest audio!</div>
+    </div>
+
+    <div class="media-container">
+      <!-- Video Example -->
+      <h2>Video Player</h2>
+      <video controls>
+        <source src="video1.mp4" type="video/mp4" />
+      </video>
+      <div class="caption">Watch our featured video!</div>
+    </div>
+
+    <div class="media-container">
+      <!-- Video with Autoplay, Loop, and Muted -->
+      <h2>Autoplay and Loop Video</h2>
+      <video autoplay loop muted>
+        <source src="video2.mp4" type="video/mp4" />
+      </video>
+      <div class="caption">This video loops and plays automatically.</div>
+    </div>
+  </body>
+</html>
